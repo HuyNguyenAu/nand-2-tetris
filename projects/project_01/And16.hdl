@@ -13,20 +13,51 @@ CHIP And16 {
     OUT out[16];
 
     PARTS:
-    And (a = a[0], b = b[0], out = out[0]);
-    And (a = a[1], b = b[1], out = out[1]);
-    And (a = a[2], b = b[2], out = out[2]);
-    And (a = a[3], b = b[3], out = out[3]);
-    And (a = a[4], b = b[4], out = out[4]);
-    And (a = a[5], b = b[5], out = out[5]);
-    And (a = a[6], b = b[6], out = out[6]);
-    And (a = a[7], b = b[7], out = out[7]);
-    And (a = a[8], b = b[8], out = out[8]);
-    And (a = a[9], b = b[9], out = out[9]);
-    And (a = a[10], b = b[10], out = out[10]);
-    And (a = a[11], b = b[11], out = out[11]);
-    And (a = a[12], b = b[12], out = out[12]);
-    And (a = a[13], b = b[13], out = out[13]);
-    And (a = a[14], b = b[14], out = out[14]);
-    And (a = a[15], b = b[15], out = out[15]);
+    Nand (a = a[0], b = b[0], out = A0NandB0);
+    Nand (a = A0NandB0, b = A0NandB0, out = out[0]);
+
+    Nand (a = a[1], b = b[1], out = A1NandB1);
+    Nand (a = A1NandB1, b = A1NandB1, out = out[1]);
+
+    Nand (a = a[2], b = b[2], out = A2NandB2);
+    Nand (a = A2NandB2, b = A2NandB2, out = out[2]);
+
+    Nand (a = a[3], b = b[3], out = A3NandB3);
+    Nand (a = A3NandB3, b = A3NandB3, out = out[3]);
+
+    Nand (a = a[4], b = b[4], out = A4NandB4);
+    Nand (a = A4NandB4, b = A4NandB4, out = out[4]);
+
+    Nand (a = a[5], b = b[5], out = A5NandB5);
+    Nand (a = A5NandB5, b = A5NandB5, out = out[5]);
+
+    Nand (a = a[6], b = b[6], out = A6NandB6);
+    Nand (a = A6NandB6, b = A6NandB6, out = out[6]);
+
+    Nand (a = a[7], b = b[7], out = A7NandB7);
+    Nand (a = A7NandB7, b = A7NandB7, out = out[7]);
+
+    Nand (a = a[8], b = b[8], out = A8NandB8);
+    Nand (a = A8NandB8, b = A8NandB8, out = out[8]);
+
+    Nand (a = a[9], b = b[9], out = A9NandB9);
+    Nand (a = A9NandB9, b = A9NandB9, out = out[9]);
+
+    Nand (a = a[10], b = b[10], out = A10NandB10);
+    Nand (a = A10NandB10, b = A10NandB10, out = out[10]);
+
+    Nand (a = a[11], b = b[11], out = A11NandB11);
+    Nand (a = A11NandB11, b = A11NandB11, out = out[11]);
+
+    Nand (a = a[12], b = b[12], out = A12NandB12);
+    Nand (a = A12NandB12, b = A12NandB12, out = out[12]);
+
+    Nand (a = a[13], b = b[13], out = A13NandB13);
+    Nand (a = A13NandB13, b = A13NandB13, out = out[13]);
+
+    Nand (a = a[14], b = b[14], out = A14NandB14);
+    Nand (a = A14NandB14, b = A14NandB14, out = out[14]);
+
+    Nand (a = a[15], b = b[15], out = A15NandB15);
+    Nand (a = A15NandB15, b = A15NandB15, out = out[15]);
 }
